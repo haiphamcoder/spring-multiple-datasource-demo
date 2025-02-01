@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 12345678
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      pool-name: PrimaryHikariCP
+  jpa:
+    primary:
+      hibernate.ddl-auto: update
+      open-in-view: false
+      show-sql: false
+      properties:
+        hibernate:
+          format_sql: true
+logging:
+  level:
+    com.zaxxer.hikari: INFO
+    org.hibernate.orm.connections.pooling: OFF
