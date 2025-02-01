@@ -1,4 +1,4 @@
-package com.haiphamcoder.spring_multiple_datasource_demo;
+package com.haiphamcoder.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
