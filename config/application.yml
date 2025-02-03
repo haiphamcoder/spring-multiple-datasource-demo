@@ -23,3 +23,6 @@ logging:
   level:
     com.zaxxer.hikari: INFO
     org.hibernate.orm.connections.pooling: OFF
+jwt:
+  secret: secret_key_here
+  expiration: 86400000

@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/users")
 @RequiredArgsConstructor
 @Slf4j
-public class UserController {
+public class UserController extends BaseController {
     private final UserService userService;
 
     @GetMapping("/get-all")
