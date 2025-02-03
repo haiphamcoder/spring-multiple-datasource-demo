@@ -12,4 +12,9 @@ public interface UserJpaRepository extends UserRepository, JpaRepository<User, L
     default List<User> getAllUsers() {
         return findAll();
     }
+
+    @Override
+    default User createUser(User user) {
+        return save(user);
+    }
 }
